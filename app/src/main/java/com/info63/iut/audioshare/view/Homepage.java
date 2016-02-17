@@ -1,7 +1,9 @@
-package com.info63.iut.audioshare;
+package com.info63.iut.audioshare.view;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.info63.iut.audioshare.R;
 
 public class Homepage extends AppCompatActivity {
 
