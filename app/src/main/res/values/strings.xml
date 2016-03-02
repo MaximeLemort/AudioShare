@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">AudioShare</string>
+    <string name="bluetoothButton">Bluetooth_Button</string>
+    <string name="searchDevice">Search_Device</string>
+    <string name="deviceNotFound">No device found</string>
+    <string name="deviceFound">Device found :)</string>
+    <string name="StopSearch">Stop_Search</string>
 </resources>

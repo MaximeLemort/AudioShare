@@ -9,8 +9,60 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".view.Homepage">
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bluetoothButton"
+        android:id="@+id/bluetoothButton"
+        android:singleLine="false"
+        android:onClick="activerBluetooth"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/searchDevice"
+        android:id="@+id/searchDevice"
+        android:onClick="findDevice"
+        android:layout_below="@+id/bluetoothButton"
+        android:layout_centerHorizontal="true" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/deviceNotFound"
+        android:id="@+id/deviceText"
+        android:layout_below="@+id/searchDevice"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/deviceText"
+        android:layout_marginTop="1dp"
+        android:id="@+id/layoutList">
+
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:id="@+id/listView"
+            android:layout_marginTop="93dp"
+            android:layout_weight="0.24"/>
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/StopSearch"
+            android:id="@+id/buttonStopBtSearch"
+            android:onClick="stopSearching" />
+
+    </LinearLayout>
+
 </RelativeLayout>
